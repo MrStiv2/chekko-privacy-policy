@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chekko: Money &amp; Receipt Buddy — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Chekko: Money & Receipt Buddy, a budget and expense tracker by CampStudio.">
+<style>html{color-scheme:light dark}body{font:17px/1.65 system-ui,sans-serif;max-width:820px;margin:0 auto;padding:48px 24px}h1{font-size:2rem;line-height:1.2}h2{font-size:1.35rem;margin-top:2rem}a{color:#2f9e5b}small{opacity:.75}li{margin:.4rem 0}nav{font-size:.95rem;margin-bottom:1.5rem}nav a{margin-right:1rem}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border:1px solid rgba(127,127,127,.35);padding:.45rem .6rem;text-align:left;vertical-align:top}footer{margin-top:3rem;font-size:.9rem;opacity:.75}</style>
+</head>
+<body>
+<nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="uk.html" hreflang="uk">Українською</a></nav>
+<h1>Chekko: Money &amp; Receipt Buddy<br>Privacy Policy</h1>
+<p><small>Last updated: 12 October 2026</small></p>
+<p>This policy describes how Chekko: Money &amp; Receipt Buddy ("Chekko", the "app") for iPhone and Android, published by CampStudio ("we", "us"), handles information. Contact: <a href="mailto:campstudiomail@gmail.com">campstudiomail@gmail.com</a>.</p>
+
+<h2>1. No account, data stays on your device</h2>
+<p>Chekko works without registration, sign-in or a cloud account. We do not operate a synchronization server and the app contains no behavioural analytics. Everything you record — accounts, transactions, transfers, receipts (items, photos, recognized text and generated PDFs), categories, rules, budgets, plans, subscriptions, goals, inbox items, exchange-rate cache and settings — is stored on your device in an encrypted database (SQLCipher-compatible encryption with a random 256-bit key kept in the iOS Keychain or Android Keystore). The queue of automatically captured payments is encrypted separately (AES-GCM).</p>
+<p>Chekko excludes its data from operating-system cloud backups and device-to-device transfers (iCloud/iTunes backup on iOS, Google backup on Android). As a result, your data is not copied anywhere unless you create a Chekko backup yourself (see section 6).</p>
+
+<h2>2. What leaves your device and when</h2>
+<p>Most features work entirely on the device: manual entry, budgets, plans, reports and exports, on-device receipt text recognition (Apple Vision / Google ML Kit), and on-device answers in "Ask Chekko". Information is sent off the device only in these cases:</p>
+<table>
+<tr><th>Feature</th><th>What is sent</th><th>Recipient</th><th>When</th></tr>
+<tr><td>Exchange rates</td><td>Only the currency code and date. No amounts, accounts or descriptions.</td><td>National Bank of Ukraine (bank.gov.ua) and the European Central Bank (data-api.ecb.europa.eu)</td><td>Automatically when a multi-currency operation or currency setting needs a rate</td></tr>
+<tr><td>Connectivity check</td><td>An ordinary HTTPS request containing no personal or financial data</td><td>apple.com, cloudflare.com</td><td>While the app is open, to detect whether you are online</td></tr>
+<tr><td>AI receipt recognition ("Extract with AI")</td><td>The receipt photo(s) and the names of your categories</td><td>Chekko AI service</td><td>Only after you confirm a consent prompt (you may choose "Don't show again")</td></tr>
+<tr><td>AI statement screenshot import</td><td>Only the screenshot images you select; nothing else from your records</td><td>Chekko AI service</td><td>Only after you confirm each time</td></tr>
+<tr><td>"Ask Chekko" AI questions</td><td>The text of your question and income/expense totals per category for the selected and previous month (also as an image generated on the device containing the same totals). No card or account numbers, merchants, balances or individual transactions. Questions containing long digit sequences (12+ digits) are not sent.</td><td>Chekko AI service</td><td>Only after you confirm a consent prompt</td></tr>
+<tr><td>AI categories for captured payments (Premium, optional)</td><td>Only the merchant name and your category list. Amount, card, account and payment date stay on the device.</td><td>Chekko AI service</td><td>Only if you enable it with its own separate consent</td></tr>
+<tr><td>Advertising (free version)</td><td>Technical device and advertising data (see section 3)</td><td>Google AdMob / User Messaging Platform</td><td>When ads are shown in the free version; never with Premium</td></tr>
+<tr><td>Purchases</td><td>Purchase and subscription information</td><td>Apple App Store / Google Play</td><td>When you buy, restore or manage a subscription</td></tr>
+</table>
+<p>The Chekko AI service is operated by CampStudio through its own server (no AI provider keys are stored in the app). To produce results it may rely on third-party AI model providers acting on our behalf. Data sent to it is used to return the requested result (recognized receipt items, imported operations, an answer or a category). It is not used for advertising, is not sold and is not linked to any account, because Chekko has none. AI results can be wrong, so the app asks you to review them before saving. Please do not include card numbers or other payment details in questions or photos.</p>
+
+<h2>3. Advertising, consent and identifiers</h2>
+<p>The free version shows banner ads and optional rewarded videos (watching a full video grants an extra AI request) through Google Mobile Ads (AdMob). Before ads are requested, consent is collected where required through Google's User Messaging Platform (UMP). You can change your choice at any time in Chekko <em>Settings › Ad privacy options</em> (shown while you do not have Premium).</p>
+<p>Chekko requests non-personalized ads with a maximum content rating of "G". Your financial data — transactions, amounts, merchants, categories, receipts — is never shared with advertisers or used for ad targeting. Google's SDK may still collect, for ad delivery, measurement, frequency capping, fraud prevention and diagnostics:</p>
+<ul>
+<li>IP address and approximate location inferred from it;</li>
+<li>device and app information (model, OS version, language, app version);</li>
+<li>device identifiers — on Android, the Google advertising ID, which you can reset or delete in your device settings; on iOS, Chekko does not request App Tracking Transparency permission, so the advertising identifier (IDFA) is not made available;</li>
+<li>ad interactions (ads viewed and tapped) and crash or performance diagnostics.</li>
+</ul>
+<p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>. With Chekko Premium, ads are not loaded at all.</p>
+
+<h2>4. Purchases and subscriptions</h2>
+<p>Chekko Premium (monthly or annual auto-renewing subscription) is sold and billed by Apple (App Store) on iOS and Google Play on Android. Purchases are verified on the device (StoreKit 2 / Google Play Billing); we do not run a purchase server and never receive your payment-card or bank details. Manage or cancel your subscription in your Apple Account or Google Play subscription settings. Premium is tied to your store account, so it is restored with "Restore purchases" and is not included in Chekko backups.</p>
+
+<h2>5. Automatic payment capture</h2>
+<p><strong>Android (Google Pay / Google Wallet).</strong> If you turn on payment capture and grant Notification access, Chekko reads payment notifications from Google Wallet on your phone only. From those notifications it keeps just the amount, currency, merchant and card name, encrypted on the device. All other notifications are ignored and never stored, and nothing from them is sent anywhere. You can revoke Notification access in Android settings at any time.</p>
+<p><strong>iPhone (Apple Pay).</strong> Chekko has no direct access to Apple Wallet. Capture works only if you create an automation in Apple's Shortcuts app that passes a transaction's amount and merchant to the Chekko action "Add payment to inbox". These values are stored in an encrypted queue on your iPhone and are not sent anywhere. You can delete the automation at any time.</p>
+<p>Payment notifications shown by Chekko do not display amounts or merchants; those appear only inside the app.</p>
+
+<h2>6. Backups you control</h2>
+<p>"Export backup" creates a single <code>.chekko</code> file encrypted with a password you choose (AES-256-GCM, key derived with PBKDF2). You decide where to save or share it (Files, a drive, a messenger, etc.). We never receive your backups or passwords and cannot recover a forgotten password. "Restore from backup" replaces the data on the device with the contents of the file.</p>
+
+<h2>7. Permissions</h2>
+<p>Chekko asks for permissions only when a feature needs them: camera and photo library (scanning or choosing receipt photos; on Android scanning uses Google Play services' document scanner), notifications (payment notifications and subscription/income reminders), Notification access on Android (Google Pay capture), and Face ID / Touch ID / device biometrics for the optional app lock (biometric checks are performed by the operating system; Chekko never receives biometric data).</p>
+
+<h2>8. We do not sell your data</h2>
+<p>We do not sell, rent or trade personal information, and we do not share your financial records with anyone. The only third parties involved are those listed above (exchange-rate providers, the Chekko AI service and its model providers, Google for ads and consent, and Apple/Google for purchases), each only for the purpose described.</p>
+
+<h2>9. Children</h2>
+<p>Chekko is a general personal-finance app and is not directed to children under 13 (or under the minimum age required by law in your country, such as 16 in some EU countries). We do not knowingly collect personal information from children. If you believe a child has provided information to us (for example by email), contact us and we will delete it.</p>
+
+<h2>10. Deleting your data</h2>
+<ul>
+<li>In the app: <em>Settings › Backup and data › Delete all data</em> permanently erases accounts, transactions, receipts and photos, categories, plans, inbox, learned categories and settings, turns off app lock and clears payment capture and reminders (you confirm by typing "DELETE").</li>
+<li>Uninstalling Chekko removes its data from the device. Because Chekko data is excluded from system cloud backups, no copy remains with us.</li>
+<li>Backup files you exported remain wherever you saved them until you delete them.</li>
+<li>Subscriptions are managed by Apple or Google; deleting app data does not cancel a subscription.</li>
+<li>Data processed by Google (ads) or Apple/Google (purchases) is governed by their privacy controls.</li>
+</ul>
+
+<h2>11. Security</h2>
+<p>Local data is encrypted with keys held in the platform's secure storage; network requests use HTTPS. Optional app lock (Face ID / Touch ID / passcode, or Android biometrics / screen lock) protects the app, its content is hidden in the app switcher, and amounts can be hidden on screen. No method is perfectly secure, so keep your device and backup passwords protected.</p>
+
+<h2>12. Contact and privacy requests</h2>
+<p>If you email us, we receive the information you choose to include and use it only to respond. Please do not send financial records, backup passwords or payment details. Contact <a href="mailto:campstudiomail@gmail.com">campstudiomail@gmail.com</a> for privacy questions or requests. Because we do not hold your ledger, most requests are handled by the in-app controls described above.</p>
+
+<h2>13. Changes</h2>
+<p>We may update this policy when the app's functionality or service providers change. The date above identifies the current version. This policy applies to Chekko only; other CampStudio products have separate policies.</p>
+
+<footer><a href="support.html">Support</a> · <a href="uk.html" hreflang="uk">Політика конфіденційності українською</a> · © 2026 CampStudio</footer>
+</body>
+</html>
